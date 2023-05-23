@@ -1,0 +1,76 @@
+
+html,
+body {
+  overscroll-behavior-x: none;
+  
+}
+
+@font-face {
+  font-family: 'FONT';
+  src: url('../fonts/Bandseins/BandeinsStrangeBold.woff2') format('truetype');
+  /* Add additional font weights and formats if available */
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* For Firefox */
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1;
+
+
+html {
+  position: fixed;
+  height: 30px;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+
+
+
+.loader {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.marquee {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: -webkit-grab;
+  overflow: hidden;
+}
+
+.item {
+  font-size: 7vw;
+  letter-spacing: -0.05em;
+  padding-right: 0.25em;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  /* will-change: transform; */
+}
+
+.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.background {
+  height: 500px; /* Replace 500px with your desired height */
+}
+
